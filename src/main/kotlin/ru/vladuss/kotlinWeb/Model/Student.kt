@@ -11,17 +11,14 @@ data class Student(
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "student_id")
-    val studentId: Int,
+    val studentId: Long,
 
     @Column(name = "student_name")
-    @get: NotBlank
     val studentName: String,
 
     @Column(name = "student_surname")
-    @get: NotBlank
     val studentSurname: String,
 
     @Column(name = "student_age")
-    @get: NotBlank
-    val studentAge: Int
+    val studentAge: String
 )
