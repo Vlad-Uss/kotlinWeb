@@ -1,8 +1,6 @@
 package ru.vladuss.kotlinWeb.Model
 
-import java.io.Serializable
 import javax.persistence.*
-import javax.validation.constraints.NotBlank
 
 @Entity
 @Table(name = "students")
